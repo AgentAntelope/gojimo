@@ -1,7 +1,9 @@
+<h1> Qualifications: </h1>
+
 <ul>
 <% @qualifications.each do |qualification| %>
   <li>
-    <%= qualification.name %>
+    <%= link_to("#{qualification.name}", qualifications_path(id: qualification.id)) %>
   </li>
 <% end %>
 </ul>

@@ -1,0 +1,8 @@
+<h1> Subjects for <%= @qualification.name %> </h1>
+<ul>
+<% @qualification.subjects.each do |subject| %>
+  <li style="background-color:<%= subject.color %>">
+    <%= subject.name %>
+  </li>
+<% end %>
+</ul>
